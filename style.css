@@ -1,0 +1,202 @@
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.logo:hover{
+    cursor: default;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*navigation bar*/
+nav a{
+    color:white;
+    text-decoration: none;
+}
+
+a:hover{
+    color:bisque;
+    text-decoration-thickness: 3;
+    text-decoration:underline;
+    text-underline-offset: 5px;
+    transition: all 300ms;
+}
+
+nav,
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+nav{
+    background-color:rgb(53, 34, 99);
+    justify-content:space-around;
+    align-items:center ;
+    height: 90px;
+    position: absolute;
+    width: 100%;
+}
+
+.logo {
+    font-size: 1.5rem;
+    order: 0;
+    justify-content:space-around;
+}
+
+header {
+    margin-top: 3vh
+}
+
+
+.header-welcome{
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center; 
+    margin-bottom: 15px;
+    text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black,
+    1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.welcome{
+    background-image:url(welcome-image.jpg);
+    background-size: cover; /* Adjust the image size to cover the entire container */
+    background-position: center; /* Center the image within the container */
+    height: 800px; /* Set the height as needed */
+    padding: 0; /* Add padding to create space around the content */
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.welcoming-paragraphs{
+    width: 70vw;
+    margin:auto;
+    text-align:center;
+}
+
+.welcoming-paragraphs p{
+    margin-bottom: 15px;
+    font-size: 23px;
+    color:white;
+    text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black,
+    1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 250px; /* Adjust the height as needed */
+}
+
+/* Style the image wrapper */
+.image-wrapper {
+    position: relative;
+    margin: 10px; /* Add spacing between images */
+    overflow: hidden; /* Hide the overlay initially */
+    width: 360px;
+    height: 190px;
+    align-items: center;
+}
+
+/* Style the images */
+.image-wrapper img {
+    width: 360px;
+    height: 190px;
+    transition: filter 0.3s ease; /* Smooth transition for the blur effect */
+}
+
+/* Style the image overlay */
+.image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: #fff;
+    text-align: center;
+    padding: 10px; /* Add padding to the text container */
+    opacity: 0; /* Initially hide the text */
+    transition: opacity 0.3s ease; /* Smooth transition for text opacity */
+}
+
+/* Show the overlay and apply blur on hover */
+.image-wrapper:hover img {
+    filter: blur(5px);
+}
+
+.image-wrapper:hover .image-overlay {
+    opacity: 1;
+}
+
+
+.schedule {
+    background-color: #7580a8;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #5b6ba4;
+}
+
+tr:hover {
+    background-color:cornflowerblue;
+}
+
+p{
+    text-align: center;
+    font-size: 20px;
+}
+
+.contact-button {
+    background-color: #6137d4; /* Background color for the button */
+    color: #fff; /* Text color for the button */
+    padding: 15px 30px; /* Adjust padding to control the button's size */
+    font-size: 18px; /* Adjust the font size as needed */
+    border: none; /* Remove the button border */
+    cursor: pointer; /* Show a hand cursor on hover to indicate interactivity */
+}
+
+.contact-button:hover {
+    background-color: #0056b3; /* Background color on hover */
+}
+
+.note{
+    text-decoration: underline;
+    text-underline-offset: 0.2rem;
+}
