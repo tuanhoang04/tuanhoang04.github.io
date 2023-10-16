@@ -77,20 +77,22 @@ h1{
     position: relative;
     text-align: center;
     color: white;
+    justify-content: center;
+    align-items: center;
+    padding-left:120px;
+    padding-right:120px;
 }
+
 .welcoming-paragraphs{
-    width: 67vw;
-    margin:auto;
+    min-width: 50vw;
     text-align:center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .welcome img{
-    width:100vw;
-    height: 100vh;
+    
+    margin-top:30px;
+    width: 550px;
+    height: 400px;
 }
 
 .centered{
@@ -98,7 +100,8 @@ h1{
     color:white;
     text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black,
     1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
-    margin-bottom: 16px;
+    margin-bottom: 32px;
+    margin-top:32px;
 }
 
 .contact-button {
@@ -202,9 +205,42 @@ tr:hover {
 
 .footer{
     margin-top: 150px;
-    width:100%;
-    padding:100px 15%;
+    width: 100%;
+    padding:100px 0 100px 0px ;
     background: #333;
     color:#efefef;
-    display:flex
+    display:flex;
+    /* align-items: center; */
+    justify-content: center;
 }
+
+.footer div {
+    text-align: center;
+}
+
+.column-2{
+    flex-grow:2;
+}
+.column-1 a{
+    text-decoration: none;
+    color: #efefef;
+    display:block;
+    margin-bottom:10px;
+}
+
+.footer h3{
+    font-weight: 300;
+    margin-bottom:  30px;
+    letter-spacing: 1px;
+}
+
+
+
+/* @media (max-width: 768px){
+    .footer{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        font-size: smaller;
+    }
+} */
