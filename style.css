@@ -68,8 +68,10 @@ h1{
     color: white;
     justify-content: center;
     align-items: center;
-    padding-left:120px;
-    padding-right:120px;
+    padding: 120px;
+    background-color: #7580a8;
+    margin:20px;
+    border-radius: 8px;
 }
 
 .welcoming-paragraphs{
@@ -113,6 +115,7 @@ h1{
     margin-right:20px;
     padding-left: 20px;
     padding-right:20px;
+    border-radius: 8px;
 }
 
 .services {
@@ -162,49 +165,6 @@ h1{
     opacity: 1;
 }
 
-
-.schedule {
-    background-color: #7580a8;
-    margin-top:20px;
-    margin-right: 20px;
-    margin-left: 20px;
-    margin-bottom: 20px;
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-bottom: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 5px;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-table, th, td {
-    border: 1px solid #ddd;
-}
-
-th, td {
-    padding: 10px;
-    text-align: left;
-}
-
-tr:nth-child(even) {
-    background-color: #5b6ba4;
-}
-
-tr:hover {
-    background-color:cornflowerblue;
-}
-
-.note{
-    text-align: center;
-    font-size: 20px;
-    text-decoration: underline;
-    text-underline-offset: 0.2rem;
-}
-
 .footer{
     margin-top: 150px;
     width: 100%;
@@ -240,7 +200,7 @@ tr:hover {
 form input{
     width: 20vw;
     height: 45px;
-    border-radius: 4px;
+    border-radius: 8px;
     text-align:center;
     margin-bottom: 20px;
     outline:none;
@@ -265,6 +225,23 @@ form button{
     font-size: 22px;
     margin: 10px;
     cursor: pointer;
+}
+
+.youtube-video {
+    position: relative;
+    padding-bottom: 900px;
+    height: 0;
+    background-color: #7580a8;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 700px;
+    border-radius: 8px;
+  }
+  .youtube-video iframe {
+    position:relative;
+    padding-top: 20px;
+    display: block;
+    margin: 0 auto;
 }
 
 /* @media (max-width: 768px){
