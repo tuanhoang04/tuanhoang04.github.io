@@ -98,6 +98,9 @@ h1{
     1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
     margin-bottom: 20px;
     margin-top:32px;
+    padding:10px;
+    background-color:rgb(69, 61, 185);
+    border-radius: 10px;
 }
 
 .contact-button {
@@ -171,7 +174,9 @@ h1{
 }
 
 .footer{
-    margin-top: 80px;
+    margin-top: 80
+    
+    px;
     width: 100%;
     padding:100px 0 100px 0px ;
     background: #333;
