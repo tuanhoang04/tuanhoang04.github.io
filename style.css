@@ -68,9 +68,14 @@ h1{
     color: white;
     justify-content: center;
     align-items: center;
-    padding: 120px;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-bottom: 30px;
+    padding-top: 30px;
     background-color: #7580a8;
-    margin:20px;
+    margin-right:20px;
+    margin-left: 20px;
+    margin-top: 20px;
     border-radius: 8px;
 }
 
@@ -166,7 +171,7 @@ h1{
 }
 
 .footer{
-    margin-top: 150px;
+    margin-top: 80px;
     width: 100%;
     padding:100px 0 100px 0px ;
     background: #333;
@@ -243,6 +248,8 @@ form button{
     display: block;
     margin: 0 auto;
 }
+
+
 
 /* @media (max-width: 768px){
     .footer{
