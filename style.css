@@ -94,17 +94,15 @@ h1{
 .centered{
     font-size: 23px;
     color:white;
-    text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black,
-    1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
     margin-bottom: 20px;
     margin-top:32px;
     padding:10px;
-    background-color:rgb(69, 61, 185);
+    background-color:rgb(55, 14, 121);
     border-radius: 10px;
 }
 
 .contact-button {
-    background-color: #6137d4; /* Background color for the button */
+    background-color: rgb(55, 14, 121); /* Background color for the button */
     color: #fff; /* Text color for the button */
     padding: 20px 30px; /* Adjust padding to control the button's size */
     font-size: 18px; /* Adjust the font size as needed */
