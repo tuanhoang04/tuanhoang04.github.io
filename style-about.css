@@ -13,9 +13,8 @@ html{
     order: 0;
     justify-content:space-around;
     display: flex;
-    flex-direction: row;
-    margin: 0 auto;
 }
+
 .logo:hover{
     cursor: default;
 }
