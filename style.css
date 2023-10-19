@@ -18,6 +18,7 @@ html{
     order: 0;
     justify-content:space-around;
     display: flex;
+    gap: 8px;
 }
 
 .logo:hover{
@@ -51,7 +52,7 @@ nav,
 }
 
 nav{
-    background-color:rgb(99, 64, 180);
+    background-color:#6340a3;
     justify-content:space-around;
     align-items:center ;
     height: 90px;
@@ -83,7 +84,7 @@ h1{
     padding-right: 120px;
     padding-bottom: 30px;
     padding-top: 30px;
-    background-color: #818ebb;
+    background-color: #AAB4DA;
     margin-right:20px;
     margin-left: 20px;
     margin-top: 20px;
@@ -130,7 +131,7 @@ h1{
 }
 
 .services-box{
-    background-color: #7580a8;
+    background-color: #AAB4DA;
     margin-left: 20px;
     margin-right:20px;
     padding-left: 20px;
@@ -250,7 +251,7 @@ form button{
 .youtube-video {
     position: relative;
     /* height: 0; */
-    background-color: #7580a8;
+    background-color: #AAB4DA;
     margin-left: 20px;
     margin-right: 20px;
     padding-bottom: 60px;
