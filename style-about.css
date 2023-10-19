@@ -13,6 +13,7 @@ html{
     order: 0;
     justify-content:space-around;
     display: flex;
+    gap: 8px;
 }
 
 .logo:hover{
@@ -65,6 +66,8 @@ h1{
     font-size: 28px;
     margin-left: 40px;
     margin-right: 40px;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 #accordion{
@@ -118,22 +121,24 @@ h1{
 
 #accordion label + input[type="radio"]:checked + .content p{
     margin-top:10px;
-    width:75vw;
+    width:100%;
+    margin-left: 25px;
+    font-size: 20px;
 }
 
 #accordion label + input[type="radio"]:checked + .content img{
-    width: 800px;
-    height:450px;
+    width: 1000px;
+    height:500px;
     display: block;
-    margin: 0 auto;
+    margin: 15px auto;
     padding: 10px;
     border-radius: 10px;
 }
 
 .map{
     display: block;
-    width: 80vw;
-    max-width: 600px;
+    width: 96.5vw;
+    height: 66vh;
 }
 
 .map-border{
@@ -196,9 +201,9 @@ tr:hover {
 
 
 .footer{
-    margin-top: 80px;
+    margin-top: 120px;
     width: 100%;
-    padding:100px 0 100px 0px ;
+    padding:80px 0 50px 0px ;
     background: #333;
     color:#efefef;
     display:flex;
@@ -213,18 +218,27 @@ tr:hover {
 
 .column-2{
     flex-grow:2;
+    font-size: 22px;
 }
 .column-1 a{
     text-decoration: none;
     color: #efefef;
     display:block;
-    margin-bottom:10px;
+    margin-bottom:18px;
+    font-size: 20px;
+    
 }
+
+.column-3{
+    font-size: 20px;
+}
+
 
 .footer h3{
     font-weight: 300;
     margin-bottom:  30px;
     letter-spacing: 1px;
+    font-size: 25px;
 }
 
 form input{
