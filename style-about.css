@@ -58,18 +58,18 @@ nav{
 
 .our-team {
     background-color: #AAB4DA;
-    margin-left: 20px;
-    margin-right:20px;
+    margin-left: 33px;
+    margin-right:33px;
     padding-left: 20px;
     padding-right:20px;
     border-radius: 8px;
 }
 
-.services {
+.team-images-and-description {
     display: flex;
     justify-content: center;
     align-items: start;
-    height: 250px; /* Adjust the height as needed */
+    /* height: 250px; Adjust the height as needed */
 }
 
 /* Style the image wrapper */

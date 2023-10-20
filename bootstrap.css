@@ -6040,14 +6040,22 @@ textarea.form-control-lg {
   position: relative;
 }
 
+#carouselExampleCaptions{
+  width: 960px;
+  height:540px;
+  margin:0 auto
+}
+
 .carousel.pointer-event {
   touch-action: pan-y;
 }
 
 .carousel-inner {
   position: relative;
-  width: 100%;
+  width: 960px;
+  height: 540px;
   overflow: hidden;
+  border-radius: 10px;
 }
 .carousel-inner::after {
   display: block;
@@ -6059,11 +6067,17 @@ textarea.form-control-lg {
   position: relative;
   display: none;
   float: left;
-  width: 100%;
+  width: 960px;
+  height:540px;
   margin-right: -100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   transition: transform 0.6s ease-in-out;
+}
+
+.carousel-item img{
+  width:960px;
+  height:540px;
 }
 @media (prefers-reduced-motion: reduce) {
   .carousel-item {
@@ -6218,15 +6232,17 @@ textarea.form-control-lg {
   opacity: 1;
 }
 
-.carousel-caption {
+.carousel-caption h5{
   position: absolute;
   right: 15%;
   bottom: 1.25rem;
   left: 15%;
   padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-  color: #fff;
+  padding-bottom: 3rem;
+  color: white;
+  font-size: 30px;
   text-align: center;
+  text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
 }
 
 .carousel-dark .carousel-control-prev-icon,

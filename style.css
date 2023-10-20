@@ -97,7 +97,6 @@ h1{
 }
 
 .welcome img{
-    
     margin-top:30px;
     width: 550px;
     height: 400px;
@@ -105,15 +104,16 @@ h1{
 }
 
 .centered{
-    width:550px;
+    width:850px;
     font-size: 23px;
     color:white;
     margin: 0 auto;
     margin-bottom: 20px;
     margin-top:32px;
-    padding:5px 0px 5px 0px;
+    padding:5px 17px 5px 17px;
     background-color:rgb(99, 55, 168);
     border-radius: 10px;
+    text-align:center;
 }
 
 .contact-button {
