@@ -56,7 +56,61 @@ nav{
 }
 
 
+.our-team {
+    background-color: #AAB4DA;
+    margin-left: 20px;
+    margin-right:20px;
+    padding-left: 20px;
+    padding-right:20px;
+    border-radius: 8px;
+}
 
+.services {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 250px; /* Adjust the height as needed */
+}
+
+/* Style the image wrapper */
+.image-wrapper {
+    position: relative;
+    margin: 10px; /* Add spacing between images */
+    overflow: hidden; /* Hide the overlay initially */
+    width: 360px;
+    height: 230px;
+    align-items: center;
+}
+
+/* Style the images */
+.image-wrapper img {
+    width: 360px;
+    height: 230px;
+    transition: filter 0.3s ease; /* Smooth transition for the blur effect */
+}
+
+/* Style the image overlay */
+.image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: #fff;
+    text-align: center;
+    padding: 10px; /* Add padding to the text container */
+    opacity: 0; /* Initially hide the text */
+    transition: opacity 0.3s ease; /* Smooth transition for text opacity */
+}
+
+/* Show the overlay and apply blur on hover */
+.image-wrapper:hover img {
+    filter: blur(5px);
+}
+
+.image-wrapper:hover .image-overlay {
+    opacity: 1;
+}
 
 
 
