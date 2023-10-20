@@ -207,11 +207,11 @@ body {
 }
 
 hr {
-  margin: 1rem 0;
+  margin: 5px;
   color: inherit;
   border: 0;
   border-top: var(--bs-border-width) solid;
-  opacity: 0.25;
+  opacity: 0.3;
 }
 
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
@@ -6078,6 +6078,7 @@ textarea.form-control-lg {
 .carousel-item img{
   width: 60vw;
   height:33vw; 
+  margin-top: 0;
 }
 @media (prefers-reduced-motion: reduce) {
   .carousel-item {
