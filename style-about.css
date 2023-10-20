@@ -78,7 +78,7 @@ nav{
 .hamburger-icon span{
     width:100%;
     height:2px;
-    background-color: black;
+    background-color: white;
     transition: all 400ms ease-in-out;
 }
 
@@ -219,6 +219,7 @@ h1{
     display: block;
     width: 97vw;
     height: 80vh;
+    margin-bottom: 50px;
 }
 
 .map-border{
