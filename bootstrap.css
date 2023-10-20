@@ -785,9 +785,9 @@ progress {
   --bs-gutter-y: 0;
   display: flex;
   flex-wrap: wrap;
-  margin-top: calc(-1 * var(--bs-gutter-y));
+  /* margin-top: calc(-1 * var(--bs-gutter-y));
   margin-right: calc(-0.5 * var(--bs-gutter-x));
-  margin-left: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x)); */
 }
 .row > * {
   flex-shrink: 0;
@@ -4583,9 +4583,9 @@ textarea.form-control-lg {
   width:96.5vw;
   display:block;
   margin:0 auto;
-  background-color: #aab4da;
   /* overflow: hidden; */
   border-radius: 10px;
+  padding-bottom: 116px;
 }
 
 .accordion-button {
@@ -6240,7 +6240,7 @@ textarea.form-control-lg {
   padding:10px;
   background-color: #6337A8;
   color: white;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   text-align: center;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
