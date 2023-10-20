@@ -6043,7 +6043,7 @@ textarea.form-control-lg {
 #carouselExampleCaptions{
   width: 60vw;
   height:33vw;
-  margin:0 auto
+  margin:0 auto;
 }
 
 .carousel.pointer-event {
@@ -6054,7 +6054,6 @@ textarea.form-control-lg {
   position: relative;
   width: 60vw;
   height:33vw;
-  /* overflow: hidden; */
   border-radius: 10px;
 }
 .carousel-inner::after {
@@ -6079,6 +6078,8 @@ textarea.form-control-lg {
   width: 60vw;
   height:33vw; 
   margin-top: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 @media (prefers-reduced-motion: reduce) {
   .carousel-item {
