@@ -1,0 +1,24 @@
+@media screen and (max-width :1200px){
+    #desktop-nav{
+        display: none;
+    }
+    #hamburger-nav{
+        display: flex;
+    }
+    .welcome{
+        height:auto;
+    }
+    .image-overlay{
+        opacity:100;
+    }
+    .accordion-body img{
+        width:100%;
+        height:auto; 
+    }
+    .image-wrapper:hover img {
+        filter: none;
+    }
+    .form-container{
+        height:83vh;
+    }
+}

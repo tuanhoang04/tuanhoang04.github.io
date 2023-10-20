@@ -9,12 +9,14 @@
         <meta property="og:image:height" content="1024">
         <link rel="stylesheet" href="style-about.css">
         <link rel="stylesheet" href="bootstrap.css">
+        <link rel="stylesheet" href="mediaqueries.css">
         <link rel="icon" type="image/x-icon" href="img/favicon.ico">
         <script src="https://kit.fontawesome.com/eda0f1d64a.js"        crossorigin="anonymous"></script>
         <script src="script.js"></script>
     </head>
 
     <body style="background-color: #dacaf3; color:black">
+        
         <nav id="desktop-nav">
             <div class="logo">
                 <a href="index.html"><img src="img/logo.jpg" alt="logo"></a>
@@ -27,23 +29,39 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        <hr class="rounded">
+        <nav id="hamburger-nav">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.jpg" alt="logo"></a>
+                <a href="index.html" class="title">Tuan's tech repair shop</a>
+            </div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="index.html" onclick="toggleMenu">Home</a></li>
+                <li><a href="about.html" onclick="toggleMenu">About Us</a></li>
+                <li><a href="pricing.html" onclick="toggleMenu">Services</a></li>
+                <li><a href="contact.html" onclick="toggleMenu">Contact</a></li>
+            </div>
+        </nav>
 
         <div class="form-container">
         <form class="row g-3">
-            <div class="col-md-3">
+            <div class="col-md-4">
               <label for="validationDefault01" class="form-label">First name</label>
               <input type="text" class="form-control" id="validationDefault01" required>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-4">
               <label for="validationDefault02" class="form-label">Last name</label>
               <input type="text" class="form-control" id="validationDefault02" required>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-1">
               <label for="validationDefault03" class="form-label">City</label>
               <input type="text" class="form-control" id="validationDefault03" required>
             </div>
-            <br>
             <div class="col-md-4">
               <label for="validationDefault05" class="form-label">Email address</label>
               <input type="text" class="form-control" id="validationDefault05" required>
@@ -75,7 +93,7 @@
             </div>
             <div class="column-3">
                 <h3>CONTACT</h3>
-                <p>Km9, Nguyen Trai Street, Nam Tu Liem District<br>Hanoi, VN<br>Tel: 0981248437<p>
+                <p>Km9, Nguyen Trai Str., Nam Tu Liem District<br>Hanoi, VN<br>Tel: 0981248437<p>
                     <div class="social-icons">
                         <a href="https://www.facebook.com/ngoctuan04"><i class="fa-brands fa-facebook"></i></a>
                         <a href="https://www.instagram.com/iamngoctuan"><i class="fa-brands fa-instagram"></i></a>
