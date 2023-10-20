@@ -6041,8 +6041,8 @@ textarea.form-control-lg {
 }
 
 #carouselExampleCaptions{
-  width: 960px;
-  height:540px;
+  width: 60vw;
+  height:33vw;
   margin:0 auto
 }
 
@@ -6052,9 +6052,9 @@ textarea.form-control-lg {
 
 .carousel-inner {
   position: relative;
-  width: 960px;
-  height: 540px;
-  overflow: hidden;
+  width: 60vw;
+  height:33vw;
+  /* overflow: hidden; */
   border-radius: 10px;
 }
 .carousel-inner::after {
@@ -6067,8 +6067,8 @@ textarea.form-control-lg {
   position: relative;
   display: none;
   float: left;
-  width: 960px;
-  height:540px;
+  width: 60vw;
+  height:33vw;
   margin-right: -100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -6076,8 +6076,8 @@ textarea.form-control-lg {
 }
 
 .carousel-item img{
-  width:960px;
-  height:540px;
+  width: 60vw;
+  height:33vw; 
 }
 @media (prefers-reduced-motion: reduce) {
   .carousel-item {
@@ -6233,16 +6233,17 @@ textarea.form-control-lg {
 }
 
 .carousel-caption h5{
-  position: absolute;
-  right: 15%;
+  position:relative;
   bottom: 1.25rem;
-  left: 15%;
-  padding-top: 1.25rem;
-  padding-bottom: 3rem;
+  margin: 0 auto;
+  padding:10px;
+  background-color: #6337A8;
   color: white;
-  font-size: 30px;
+  font-size: 1.2rem;
   text-align: center;
-  text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
 }
 
 .carousel-dark .carousel-control-prev-icon,

@@ -83,12 +83,13 @@ h1{
     padding-left: 120px;
     padding-right: 120px;
     padding-bottom: 30px;
-    padding-top: 30px;
+    /* padding-top: 30px; */
     background-color: #AAB4DA;
     margin-right:20px;
     margin-left: 20px;
     margin-top: 20px;
     border-radius: 8px;
+    height:85vh;
 }
 
 .welcoming-paragraphs{
@@ -104,12 +105,12 @@ h1{
 }
 
 .centered{
-    width:850px;
-    font-size: 23px;
+    width:60vw;
+    font-size: 1.2rem;
     color:white;
     margin: 0 auto;
     margin-bottom: 20px;
-    margin-top:32px;
+    margin-top:75px;
     padding:5px 17px 5px 17px;
     background-color:rgb(99, 55, 168);
     border-radius: 10px;
@@ -256,12 +257,15 @@ form button{
     margin-right: 20px;
     padding-bottom: 60px;
     border-radius: 8px;
+
   }
   .youtube-video iframe {
     position:relative;
     padding-top: 20px;
     display: block;
     margin: 0 auto;
+    aspect-ratio: 16/9;
+    width:80vw
 }
 
 
