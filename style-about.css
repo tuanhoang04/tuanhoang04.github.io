@@ -60,8 +60,8 @@ nav{
     background-color: #AAB4DA;
     margin-left: 33px;
     margin-right:33px;
-    padding-left: 20px;
-    padding-right:20px;
+    /* padding-left: 20px;
+    padding-right:20px; */
     border-radius: 8px;
 }
 
@@ -125,12 +125,14 @@ h1{
     justify-content: center;
     text-align: center;
     color:white;
-    width:fit-content;
+    width:100%;
     padding:0px 10px 0px 10px;
     background-color: rgb(99, 55, 168);
     margin:0 auto;
     margin-top:3vh;
-    border-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    font-size: 1.9rem;
 }
 
 #accordion{
@@ -232,8 +234,6 @@ h1{
     margin-right: 20px;
     margin-left: 20px;
     margin-bottom: 20px;
-    padding-right: 20px;
-    padding-left: 20px;
     padding-bottom: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 5px;
@@ -243,6 +243,8 @@ h1{
 table {
     width: 100%;
     border-collapse: collapse;
+    padding-right: 25px;
+    padding-left: 25px;
 }
 
 table, th, td {
