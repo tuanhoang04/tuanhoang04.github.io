@@ -81,4 +81,8 @@
     .row{
         font-size: 25px;
     }
+    .fill-form p{
+        font-size: 33px;
+        margin-left: 7px;
+    }
 }
