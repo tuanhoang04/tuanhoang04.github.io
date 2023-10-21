@@ -2386,6 +2386,10 @@ textarea.form-control-lg {
   margin-left: 0;
 }
 
+.left-aligned-input {
+  text-align: left;
+}
+
 .form-check-input {
   --bs-form-check-bg: var(--bs-body-bg);
   flex-shrink: 0;
@@ -6246,7 +6250,6 @@ textarea.form-control-lg {
   text-align: center;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-
 }
 
 .carousel-dark .carousel-control-prev-icon,
