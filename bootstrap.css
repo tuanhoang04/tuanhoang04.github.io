@@ -4586,6 +4586,7 @@ textarea.form-control-lg {
   /* overflow: hidden; */
   border-radius: 10px;
   padding-bottom: 116px;
+  height:fit-content;
 }
 
 .accordion-button {

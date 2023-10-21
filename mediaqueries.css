@@ -1,6 +1,6 @@
 @media screen and (max-width :1200px){
     .title{
-        font-size: 1.9rem;
+        font-size: 2.4rem;
     }
     #desktop-nav{
         display: none;
@@ -51,29 +51,30 @@
         height:400px;
     }
     .centered{
-        font-size: 1.9rem;
+        font-size: 2.6rem;
         width:90vw;
     }
     .youtube-video iframe{
         width:90vw
     }
     .carousel-caption h5{
-        font-size: 1.9rem;
+        font-size: 3rem;
     }
     .image-overlay p{
-        font-size: 1.3rem;
-    }
-    .accordion-header button{
         font-size: 1.5rem;
     }
+    .accordion-header button{
+        font-size: 2.68rem;
+    }
     .accordion-body{
-        font-size: 1.4rem;
+        font-size: 2.6rem;
     }
     th{
-        font-size: 1.4rem;
+        font-size: 2.0rem;
+        text-align: left;
     }
     td{
-        font-size: 1.4rem;
+        font-size: 2.2rem;
     }
     .note{
         font-size: 1.5rem;
@@ -84,5 +85,45 @@
     .fill-form p{
         font-size: 33px;
         margin-left: 7px;
+    }
+    .col-md-4 label{
+        font-size: 2.2rem;
+    }
+    .col-md-1 label{
+        font-size: 2.2rem;
+    }
+    .col-md-5 label{
+        font-size: 2.2rem;
+    }
+    .col-12 button{
+        font-size: 2.1rem;
+    }
+    .col-md-1 {
+        width: 90%;
+      }
+    .col-md-4 {
+        width: 90%;
+      }
+    .col-md-5 {
+        width: 90%;
+      }
+    h1{
+        font-size: 3rem;
+    }
+    .footer h3{
+        font-size: 2.4rem;
+    }
+    .footer a{
+        font-size: 1.7rem;
+    }
+    .footer button{
+        font-size: 1.4rem;
+    }
+    .footer input{
+        width:250px;
+        font-size: 1.6rem;
+    }
+    .footer p{
+        font-size: 1.6rem;
     }
 }
