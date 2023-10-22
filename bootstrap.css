@@ -4588,6 +4588,7 @@ textarea.form-control-lg {
   display:block;
   margin:0px auto;
   margin-top:10px;
+  margin-bottom: 30px;
   /* overflow: hidden; */
   border-radius: 10px;
   height:fit-content;

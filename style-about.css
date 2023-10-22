@@ -341,10 +341,10 @@ form button{
 }
 
 .form-container{
-    padding-bottom:200px;
-    width:100vw;
+    min-width:100vw;
     display:block;
     margin:0 auto;
+    margin-bottom: 30px;
 }
 
 .fill-form p{
