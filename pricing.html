@@ -3,14 +3,20 @@
     <head>
         <title>Tech repair shop</title>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:image" content="https://i.imgur.com/9RZOQbz.jpg">
+        <meta property="og:image:type" content="image/jpg">
+        <meta property="og:image:width" content="1024">
+        <meta property="og:image:height" content="1024">
         <link rel="stylesheet" href="style-about.css">
-        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
         <link rel="stylesheet" href="bootstrap.css">
+        <link rel="stylesheet" href="mediaqueries.css">
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
         <script src="https://kit.fontawesome.com/eda0f1d64a.js"        crossorigin="anonymous"></script>
+        <script src="script.js"></script>
     </head>
 
     <body style="background-color: #dacaf3; color:black">
+        <article>
         <nav id="desktop-nav">
             <div class="logo">
                 <a href="index.html"><img src="img/logo.jpg" alt="logo"></a>
@@ -18,22 +24,308 @@
             </div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About us</a></li>
+                <li><a href="about.html">About Us</a></li>
                 <li><a href="pricing.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        <hr class="rounded">
+        <nav id="hamburger-nav">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.jpg" alt="logo"></a>
+                <a href="index.html" class="title">Tuan's tech repair shop</a>
+            </div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="index.html" onclick="toggleMenu">Home</a></li><hr>
+                <li><a href="about.html" onclick="toggleMenu">About Us</a></li><hr>
+                <li><a href="pricing.html" onclick="toggleMenu">Services</a></li><hr>
+                <li><a href="contact.html" onclick="toggleMenu">Contact</a></li>
+            </div>
+        </nav>
+
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <h1>Prices Of The Services That We Offer:</h1>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                    1. Device Repair Services
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p><b>Smartphone Repair:</b></p>
+                    <table>
+                        <tr>
+                            <th>Repair Services</th>
+                            <th>Minimum Price</th>
+                            <th>Maximum price</th>
+                        </tr>
+                        <tr>
+                            <td>Screen replacement</td>
+                            <td>$50</td>
+                            <td>$300</td>
+                        </tr>
+                        <tr>
+                            <td>Battery replacement</td>
+                            <td>$40</td>
+                            <td>$100</td>
+                        </tr>
+                        <tr>
+                            <td>Charging Port Repair</td>
+                            <td>$60</td>
+                            <td>$120</td>
+                        </tr>
+                        <tr>
+                            <td>Water Damage Repair</td>
+                            <td>$70</td>
+                            <td>$150</td>
+                        </tr>
+                        <tr>
+                            <td>Software Issues</td>
+                            <td>$20</td>
+                            <td>$50</td>
+                        </tr>
+                    </table>
+                    <p><b>Laptop Repair:</b></p>
+                    <table>
+                        <tr>
+                            <th>Repair Services</th>
+                            <th>Minimum Price</th>
+                            <th>Maximum price</th>
+                        </tr>
+                        <tr>
+                            <td>CPU repaste</td>
+                            <td>$20</td>
+                            <td>$30</td>
+                        </tr>
+                        <tr>
+                            <td>Screen replacement</td>
+                            <td>$80</td>
+                            <td>$400</td>
+                        </tr>
+                        <tr>
+                            <td>Battery replacement</td>
+                            <td>$50</td>
+                            <td>$150</td>
+                        </tr>
+                        <tr>
+                            <td>Keyboard replacement</td>
+                            <td>$60</td>
+                            <td>$120</td>
+                        </tr>
+                        <tr>
+                            <td>SSD Replacement</td>
+                            <td>$60</td>
+                            <td>$150</td>
+                        </tr>
+                        <tr>
+                            <td>Motherboard Fix</td>
+                            <td>$60</td>
+                            <td>$300</td>
+                        </tr>
+                    </table>
+                    <p><b>Desktop Repair:</b></p>
+                    <table>
+                        <tr>
+                            <th>Component Replacement</th>
+                            <th>Minimum Price</th>
+                            <th>Maximum price</th>
+                        </tr>
+                        <tr>
+                            <td>CPU repaste</td>
+                            <td>$30</td>
+                            <td>$30</td>
+                        </tr>
+                        <tr>
+                            <td>RAM</td>
+                            <td>$30</td>
+                            <td>$150</td>
+                        </tr>
+                        <tr>
+                            <td>Power Supply Unit</td>
+                            <td>$40</td>
+                            <td>$100</td>
+                        </tr>
+                        <tr>
+                            <td>Graphics Card</td>
+                            <td>$60</td>
+                            <td>$800</td>
+                        </tr>
+                        <tr>
+                            <td>Motherboard</td>
+                            <td>$60</td>
+                            <td>$200</td>
+                        </tr>
+                    </table>
+                    <p><small>Some repairs may have additional costs for parts, shipping, or expedited service.</small></p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                    2. Device Upgrades
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p><b>Laptop upgrade:</b></p>
+                    <table>
+                        <tr>
+                            <th>Upgrade Services</th>
+                            <th>Minimum Price</th>
+                            <th>Maximum price</th>
+                        </tr>
+                        <tr>
+                            <td>RAM upgrade</td>
+                            <td>$40</td>
+                            <td>$100</td>
+                        </tr>
+                        <tr>
+                            <td>SSD upgrade</td>
+                            <td>$60</td>
+                            <td>$150</td>
+                        </tr>
+                    </table>
+                    <p><b>Desktop upgrade:</b></p>
+                    <table>
+                        <tr>
+                            <th>Upgrade Services</th>
+                            <th>Minimum Price</th>
+                            <th>Maximum price</th>
+                        </tr>
+                        <tr>
+                            <td>RAM upgrade</td>
+                            <td>$30</td>
+                            <td>$80</td>
+                        </tr>
+                        <tr>
+                            <td>SSD upgrade</td>
+                            <td>$60</td>
+                            <td>$150</td>
+                        </tr>
+                        <tr>
+                            <td>GPU Upgrade</td>
+                            <td>$60</td>
+                            <td>$800</td>
+                        </tr>
+                    </table>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                    3. Computer Diagnostic Services
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                        <p><b>Diagnostic Pricing:</b></p>
+                        <table>
+                            <tr>
+                                <th>PC Diagnostic Services</th>
+                                <th>Minimum Price</th>
+                                <th>Maximum price</th>
+                            </tr>
+                            <tr>
+                                <td>Software Diagnostic</td>
+                                <td>$30</td>
+                                <td>$80</td>
+                            </tr>
+                            <tr>
+                                <td>Hardware Diagnostic</td>
+                                <td>$60</td>
+                                <td>$150</td>
+                            </tr>
+                        </table>
+                    </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                    4. Virus and Malware Removal
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p><b>Virus Removal Pricing:</b></p>
+                    <table>
+                        <tr>
+                            <th>Virus Removal Services</th>
+                            <th>Minimum Price</th>
+                            <th>Maximum price</th>
+                        </tr>
+                        <tr>
+                            <td>Basic Virus/Malware Removal</td>
+                            <td>$50</td>
+                            <td>$150</td>
+                        </tr>
+                        <tr>
+                            <td>Advanced Virus/Malware Removal</td>
+                            <td>$150</td>
+                            <td>$200</td>
+                        </tr>
+                    </table>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                    5. Data Recovery
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <table>
+                        <tr>
+                            <th>Recovery Services</th>
+                            <th>Minimum Price</th>
+                            <th>Maximum price</th>
+                        </tr>
+                        <tr>
+                            <td>Hard Drive Data Recovery</td>
+                            <td>$100-$300</td>
+                            <td>$300-$600</td>
+                        </tr>
+                        <tr>
+                            <td>SSD Data Recovery</td>
+                            <td>$200-$400</td>
+                            <td>$400-$900</td>
+                        </tr>
+                        <tr>
+                            <td>USB Data Recovery</td>
+                            <td>$100</td>
+                            <td>$300</td>
+                        </tr>
+                        <tr>
+                            <td>RAID Data Recovery</td>
+                            <td>$500-$2500</td>
+                            <td>$2500-$3500</td>
+                        </tr>
+                    </table>
+                </div>
+              </div>
+            </div>
+          </div>
 
 
-
-
-
+        </article>
         <footer class="footer">
             <div class="column-1">
                 <h3>USEFUL LINKS</h3>
                 <a href="index.html">Home</a>
                 <a href="about.html">About us</a>
                 <a href="pricing.html">Services</a>
+                <a href="contact.html">Contact</a>
             </div>
             <div class="column-2">
                 <h3>NEWSLETTER</h3>
@@ -45,13 +337,14 @@
             </div>
             <div class="column-3">
                 <h3>CONTACT</h3>
-                <p>Km9, Nguyen Trai Street, Nam Tu Liem District<br>Hanoi, VN<br>Tel: 0981248437<p>
-                <div class="social-icons">
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-youtube"></i>
-                </div>
+                <p>Km9, Nguyen Trai str.<br>Nam Tu Liem dist.<br>Hanoi, VN<br>Tel: 0981248437<p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/ngoctuan04"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/iamngoctuan"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
             </div>
         </footer>
+        <script src="bootstrap.bundle.js"></script>
     </body>
 </html>

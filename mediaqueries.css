@@ -1,0 +1,129 @@
+@media screen and (max-width :984px){
+    .title{
+        font-size: 2.4rem;
+    }
+    #desktop-nav{
+        display: none;
+    }
+    #hamburger-nav{
+        display: flex;
+    }
+    .welcome{
+        height:auto;
+        padding-left: 0px;
+        padding-right:0px;
+        padding-bottom: 100px;
+    }
+    .image-overlay{
+        opacity:1;
+    }
+    .accordion-body img{
+        width:100%;
+        height:auto; 
+    }
+    .image-wrapper:hover img {
+        filter: none;
+    }
+    .form-container{
+        height:83vh;
+    }
+    .youtube-video{
+        margin-bottom:206px;
+    }
+    #carouselExampleCaptions{
+        max-width: 750px;
+        max-height:400px;
+        /* display: flex;
+        flex-direction: column;
+        align-items: center; */
+    }
+    #carouselExampleCaptions .carousel-inner {
+        max-width: 750px;
+        max-height:400px;
+    }
+    .carousel-item {
+        max-width: 750px;
+        max-height:400px;
+        padding:1px;
+    }
+    .carousel-item img{
+        max-width: 750px;
+        max-height:400px;
+    }
+    .centered{
+        font-size: 2.1rem;
+        width:100%;
+    }
+    .youtube-video iframe{
+        width:90vw
+    }
+    .carousel-caption h5{
+        font-size: 2.2rem;
+    }
+    .image-overlay p{
+        font-size: 1.5rem;
+    }
+    .accordion-header button{
+        font-size: 2.68rem;
+    }
+    .accordion-body{
+        font-size: 2.6rem;
+    }
+    th{
+        font-size: 2.0rem;
+        text-align: left;
+    }
+    td{
+        font-size: 2.2rem;
+    }
+    .note{
+        font-size: 1.5rem;
+    }
+    .row{
+        font-size: 25px;
+    }
+    .fill-form p{
+        font-size: 33px;
+        margin-left: 7px;
+    }
+    .col-md-4 label{
+        font-size: 2.2rem;
+    }
+    .col-md-1 label{
+        font-size: 2.2rem;
+    }
+    .col-md-5 label{
+        font-size: 2.2rem;
+    }
+    .col-12 button{
+        font-size: 2.1rem;
+    }
+    .col-md-1 {
+        width: 90%;
+      }
+    .col-md-4 {
+        width: 90%;
+      }
+    .col-md-5 {
+        width: 90%;
+      }
+    h1{
+        font-size: 2.8rem;
+    }
+    .footer h3{
+        font-size: 2.4rem;
+    }
+    .footer a{
+        font-size: 1.7rem;
+    }
+    .footer button{
+        font-size: 1.4rem;
+    }
+    .footer input{
+        width:250px;
+        font-size: 1.6rem;
+    }
+    .footer p{
+        font-size: 1.6rem;
+    }
+}

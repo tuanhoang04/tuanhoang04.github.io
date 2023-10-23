@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tech repair shop</title>
+        <meta charset="utf-8" />
+        <meta property="og:image" content="https://i.imgur.com/9RZOQbz.jpg">
+        <meta property="og:image:type" content="image/jpg">
+        <meta property="og:image:width" content="1024">
+        <meta property="og:image:height" content="1024">
+        <link rel="stylesheet" href="style-about.css">
+        <link rel="stylesheet" href="bootstrap.css">
+        <link rel="stylesheet" href="mediaqueries.css">
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+        <script src="https://kit.fontawesome.com/eda0f1d64a.js"        crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+    </head>
+
+    <body style="background-color: #dacaf3; color:black">
+        
+        <nav id="desktop-nav">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.jpg" alt="logo"></a>
+                <a href="index.html" class="title">Tuan's tech repair shop</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="pricing.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <nav id="hamburger-nav">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.jpg" alt="logo"></a>
+                <a href="index.html" class="title">Tuan's tech repair shop</a>
+            </div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="index.html" onclick="toggleMenu">Home</a></li><hr>
+                <li><a href="about.html" onclick="toggleMenu">About Us</a></li><hr>
+                <li><a href="pricing.html" onclick="toggleMenu">Services</a></li><hr>
+                <li><a href="contact.html" onclick="toggleMenu">Contact</a></li>
+            </div>
+        </nav>
+
+        <div class="form-container">
+            <div class="fill-form">
+                <p><b>Please fill in this form or call our number for us to reach you.</b><p>
+            </div>
+        <form class="row g-3">
+            <div class="col-md-4">
+              <label for="validationDefault01" class="form-label">First name</label>
+              <input type="text" class="form-control left-aligned-input" id="validationDefault01" required>
+            </div>
+            <div class="col-md-4">
+              <label for="validationDefault02" class="form-label">Last name</label>
+              <input type="text" class="form-control left-aligned-input" id="validationDefault02" required>
+            </div>
+            <div class="col-md-1">
+              <label for="validationDefault03" class="form-label">City</label>
+              <input type="text" class="form-control left-aligned-input" id="validationDefault03" required>
+            </div>
+            <div class="col-md-4">
+              <label for="validationDefault05" class="form-label">Email address</label>
+              <input type="text" class="form-control left-aligned-input" id="validationDefault05" required>
+            </div>
+            <div class="col-md-5">
+              <label for="validationDefault05" class="form-label">Request</label>
+              <input type="text" class="form-control left-aligned-input" id="validationDefault05" required>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">Submit request</button>
+            </div>
+          </form>
+        </div>
+
+        <footer class="footer">
+            <div class="column-1">
+                <h3>USEFUL LINKS</h3>
+                <a href="index.html">Home</a>
+                <a href="about.html">About us</a>
+                <a href="pricing.html">Services</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="column-2">
+                <h3>NEWSLETTER</h3>
+                <form>
+                    <input type="email" placeholder="Your Email Address" required>
+                    <br>
+                    <button type="submit">SUBSCRIBE NOW</button>
+                </form>
+            </div>
+            <div class="column-3">
+                <h3>CONTACT</h3>
+                <p>Km9, Nguyen Trai str.<br>Nam Tu Liem dist.<br>Hanoi, VN<br>Tel: 0981248437<p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/ngoctuan04"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/iamngoctuan"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+            </div>
+        </footer>
+    <script src="bootstrap.bundle.js"></script>
+    </body>
+</html>

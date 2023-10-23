@@ -3,11 +3,16 @@
     <head>
         <title>Tech repair shop</title>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:image" content="https://i.imgur.com/9RZOQbz.jpg">
+        <meta property="og:image:type" content="image/jpg">
+        <meta property="og:image:width" content="1024">
+        <meta property="og:image:height" content="1024">
         <link rel="stylesheet" href="style-about.css">
-        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
         <link rel="stylesheet" href="bootstrap.css">
+        <link rel="stylesheet" href="mediaqueries.css">
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
         <script src="https://kit.fontawesome.com/eda0f1d64a.js"        crossorigin="anonymous"></script>
+        <script src="script.js"></script>
     </head>
 
     <body style="background-color: #dacaf3; color:black">
@@ -18,143 +23,53 @@
             </div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About us</a></li>
+                <li><a href="about.html">About Us</a></li>
                 <li><a href="pricing.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        <hr class="rounded">
+        <nav id="hamburger-nav">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.jpg" alt="logo"></a>
+                <a href="index.html" class="title">Tuan's tech repair shop</a>
+            </div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="index.html" onclick="toggleMenu">Home</a></li><hr>
+                <li><a href="about.html" onclick="toggleMenu">About Us</a></li><hr>
+                <li><a href="pricing.html" onclick="toggleMenu">Services</a></li><hr>
+                <li><a href="contact.html" onclick="toggleMenu">Contact</a></li>
+            </div>
+        </nav>
 
         <div class="our-team">
             <h1>Our Team</h1>
-            <div class="services">
+            <div class="team-images-and-description">
                 <div class="image-wrapper">
                     <img src="img/technician-1.jpg" alt="Technician 1">
                     <div class="image-overlay">
-                        <p>Eugene Morris</p>
+                        <p><b>Morris Roman</b> <br> IT Software Specialist</p>
                     </div>
                 </div>
                 <div class="image-wrapper">
                     <img src="img/technician-2.jpg" alt="Technician 2">
                     <div class="image-overlay">
-                        <p>Kevin Garcia</p>
+                        <p><b>Kevin Garcia</b> <br> Mobile device specialist</p>
                     </div>
                 </div>
                 <div class="image-wrapper">
                     <img src="img/technician-3.jpg" alt="Technician 3">
                     <div class="image-overlay">
-                        <p>Aaron Barnes</p>
+                        <p><b>Aaron Barnes</b> <br>Computer Technician</p>
                     </div>
                 </div>
             </div>
         </div>
-
-
-
-
-
-
-
-
-        <!-- <ul id="accordion">
-            <div class="overview">
-                <h1>Here's An Overview Of The Services We Offer:</h1>
-            <li>
-                <label for="first"><b>1. Device Repair Services</b><span>&#x3e</span></label>
-                <input type="radio" name="accordion" id="first">
-                <div class="content">
-                    <hr color="black">
-                        <p><b>Smartphone Repair:</b> Is your smartphone in need of a fix? At Tuan's Tech Repair, we specialize in expert smartphone repair services to get your device back in perfect working order. Our skilled technicians are well-versed in addressing a wide range of smartphone issues. Whether you have a cracked screen, battery problems, software glitches, or any other smartphone-related concern, we've got you covered.</p>
-                        <p><b>Laptop and Computer Repair:</b> At Tuan's Tech Repair, we understand the critical role laptops and computers play in your personal and professional life. When your laptop or computer encounters issues, it can disrupt your daily tasks and productivity. Our team of skilled technicians is here to provide comprehensive laptop and computer repair services to get you back up and running quickly and efficiently.
-                        </p>
-                    <img src="img/computer-repair.jpg">
-                </div>
-            </li>
-
-            <li>
-                <label for="second"><b>2. Device Upgrades</b><span>&#x3e</span></label>
-                <input type="radio" name="accordion" id="second">
-                <div class="content">
-                    <hr color="black">
-                    <p>Our Device Upgrade Services Include:</p>
-
-                    <p><b>Hardware Upgrades:</b> If your device is starting to feel sluggish or can't keep up with your demands, we can upgrade its hardware components. Whether it's increasing RAM, installing a faster SSD, or upgrading your device's graphics capabilities, our experts can improve its performance.</p>
-                        
-                        <p><b>Operating System Updates:</b> Keeping your device's operating system up to date is essential for security and functionality. We can ensure your device runs the latest OS, complete with the newest features and enhancements.</p>
-                        
-                        <p><b>Software Optimization:</b> Sometimes, your device simply needs a software overhaul. Our technicians can optimize your device's software, removing unnecessary clutter and fine-tuning its performance.</p>
-                        
-                        <p><b>Battery Upgrades:</b> If your device's battery isn't lasting as long as it used to, we can replace it with a higher-capacity battery to extend usage time.</p>
-                    </p>
-                    <img src="img/upgrades.jpg">
-                </div>
-            </li>
-
-            <li>
-                <label for="third"><b>3. Diagnostic Services</b><span>&#x3e</span></label>
-                <input type="radio" name="accordion" id="third">
-                <div class="content">
-                    <hr color="black">
-                    <p><b>Our Diagnostic Services Include:</b>
-
-                        <p><b>Device Evaluation:</b> Our technicians will conduct a thorough examination of your device, checking both its hardware and software components to pinpoint any potential issues.</p>
-                        
-                        <p><b>Performance Testing:</b> We'll assess your device's performance to identify any slowdowns, bottlenecks, or other performance-related problems.</p>
-                        
-                        <p><b> Analysis:</b> If your device is displaying error messages or unusual behavior, we'll analyze these issues to determine the underlying causes.</p>
-
-                        <b>Network and Connectivity Analysis:</b> If your device has connectivity issues, we'll diagnose problems related to Wi-Fi, cellular, or other network connections.</p>
-                    
-                    </p>
-                    <img src="img/diagnose.jpg">
-                </div>
-            </li>
-
-            <li>
-                <label for="fourth"><b>4. Virus and Malware Removal</b><span>&#x3e</span></label>
-                <input type="radio" name="accordion" id="fourth">
-                <div class="content">
-                    <hr color="black">
-                    <p>Is your device plagued by viruses, malware, or other security threats? At Tuan's Tech Repair, we offer expert virus and malware removal services to restore the health and security of your device. Our team of skilled technicians is equipped with the latest tools and techniques to eliminate these threats and safeguard your digital world.
-                        <b>Our Virus and Malware Removal Services Include:</b>
-
-                        <b>Comprehensive Scans:</b> Our technicians will conduct in-depth scans of your device to detect and identify all types of viruses, malware, spyware, and other malicious software.
-                        
-                        <b>Threat Isolation:</b> Once identified, we'll isolate and quarantine the threats to prevent them from causing further damage to your device and data.
-                        
-                        <b>Safe Removal:</b> We'll safely and thoroughly remove all detected viruses and malware from your device, ensuring complete elimination.
-                        
-                        <b>Security Enhancements:</b> In addition to removal, we'll strengthen your device's security measures to help protect it from future threats.
-                    </p>
-                    <img src="img/virus_detected_image.jpg">
-                </div>
-            </li>
-
-            <li>
-                <label for="fifth"><b>5. Data Recovery</b><span>&#x3e</span></label>
-                <input type="radio" name="accordion" id="fifth">
-                <div class="content">
-                    <hr color="black">
-                        <p>
-                            <b>Our Virus and Malware Removal Services Include:</b>
-                        <b>Accidental Deletion Recovery:</b> If you've deleted files or data accidentally, we can help recover them, even if they're no longer in your device's recycle bin.
-
-                        <b>Formatted Drive Recovery:</b> Data loss due to accidental formatting can be devastating. We specialize in recovering data from formatted drives, ensuring your information is not lost forever.
-                        
-                        <b>Corrupted File Retrieval:</b> Corrupted files can be caused by various factors. We'll work to repair and retrieve as much of the data as possible.
-                        
-                        <b>Hard Drive and Storage Device Recovery:</b> Whether it's your computer's hard drive, an external drive, USB drive, or memory card, we can recover data from various storage devices.
-                        
-                        <b>Operating System Failure Recovery:</b> In cases of operating system failures or device malfunctions, we can recover data from affected devices.
-                        
-                        <b>Virus and Malware Damage Recovery:</b> If your device has been infected with viruses or malware, and data loss occurred as a result, we can recover your valuable information.
-                        
-                        <b>Data Backup Solutions:</b> We can help you set up reliable data backup solutions to prevent future data loss.
-                    </p>
-                            <img src="img/Data-Recovery.jpg">
-                </div>
-            </li>
-            </div>
-        </ul> -->
 
 
         <div class="accordion" id="accordionPanelsStayOpenExample">
@@ -167,6 +82,7 @@
               </h2>
               <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
                 <div class="accordion-body">
+                    <p><b>Our Device Repair Services Include:</b></p>
                     <p><b>Smartphone Repair:</b> Is your smartphone in need of a fix? At Tuan's Tech Repair, we specialize in expert smartphone repair services to get your device back in perfect working order. Our skilled technicians are well-versed in addressing a wide range of smartphone issues. Whether you have a cracked screen, battery problems, software glitches, or any other smartphone-related concern, we've got you covered.</p>
                     <p><b>Laptop and Computer Repair:</b> At Tuan's Tech Repair, we understand the critical role laptops and computers play in your personal and professional life. When your laptop or computer encounters issues, it can disrupt your daily tasks and productivity. Our team of skilled technicians is here to provide comprehensive laptop and computer repair services to get you back up and running quickly and efficiently.
                     </p>
@@ -182,7 +98,7 @@
               </h2>
               <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
                 <div class="accordion-body">
-                    <p>Our Device Upgrade Services Include:</p>
+                    <p><b>Our Device Upgrade Services Include:</b></p>
 
                     <p><b>Hardware Upgrades:</b> If your device is starting to feel sluggish or can't keep up with your demands, we can upgrade its hardware components. Whether it's increasing RAM, installing a faster SSD, or upgrading your device's graphics capabilities, our experts can improve its performance.</p>
                         
@@ -203,7 +119,7 @@
               </h2>
               <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
                 <div class="accordion-body">
-                    <p><b>Our Diagnostic Services Include:</b>
+                    <p><b>Our Diagnostic Services Include:</b></p>
 
                         <p><b>Device Evaluation:</b> Our technicians will conduct a thorough examination of your device, checking both its hardware and software components to pinpoint any potential issues.</p>
                         
@@ -225,9 +141,7 @@
               </h2>
               <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
                 <div class="accordion-body">
-                    <p>Is your device plagued by viruses, malware, or other security threats? At Tuan's Tech Repair, we offer expert virus and malware removal services to restore the health and security of your device. Our team of skilled technicians is equipped with the latest tools and techniques to eliminate these threats and safeguard your digital world.<br><br>
-                        <b>Our Virus and Malware Removal Services Include:</b>
-                        <br><br>
+                        <p><b>Our Virus and Malware Removal Services Include:</b></p>
                         <b>Comprehensive Scans:</b> Our technicians will conduct in-depth scans of your device to detect and identify all types of viruses, malware, spyware, and other malicious software.
                         <br>
                         <b>Threat Isolation:</b> Once identified, we'll isolate and quarantine the threats to prevent them from causing further damage to your device and data.
@@ -248,9 +162,7 @@
               </h2>
               <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
                 <div class="accordion-body">
-                    <p>
-                        <b>Our Virus and Malware Removal Services Include:</b>
-                        <br><br><br>
+                    <p><b>Our Data Recovery Services Include:</b></p>
                     <b>Accidental Deletion Recovery:</b> If you've deleted files or data accidentally, we can help recover them, even if they're no longer in your device's recycle bin.
                     <br>
         
@@ -276,21 +188,8 @@
                 </div>
               </div>
             </div>
-          </div>
+        </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-        
         <div class="schedule">
             <h1>Our Working Schedule</h1>
             <table>
@@ -349,6 +248,7 @@
                 <a href="index.html">Home</a>
                 <a href="about.html">About us</a>
                 <a href="pricing.html">Services</a>
+                <a href="contact.html">Contact</a>
             </div>
             <div class="column-2">
                 <h3>NEWSLETTER</h3>
@@ -360,18 +260,14 @@
             </div>
             <div class="column-3">
                 <h3>CONTACT</h3>
-                <p>Km9, Nguyen Trai Street, Nam Tu Liem District<br>Hanoi, VN<br>Tel: 0981248437<p>
-                <div class="social-icons">
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-youtube"></i>
-                </div>
+                <p>Km9, Nguyen Trai str.<br>Nam Tu Liem dist.<br>Hanoi, VN<br>Tel: 0981248437<p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/ngoctuan04"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/iamngoctuan"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
             </div>
         </footer>
-
-
-
-
     <script src="bootstrap.bundle.js"></script>
     </body>
 </html>
